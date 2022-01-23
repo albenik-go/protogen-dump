@@ -1,0 +1,76 @@
+package wellknown
+
+import (
+	"google.golang.org/protobuf/reflect/protoreflect"
+)
+
+// Based on github.com/protocolbuffers/protobuf-go/internal/genid
+var wellknown = map[protoreflect.FullName]struct{}{
+	"google.protobuf.Any":                                   {},
+	"google.protobuf.Api":                                   {},
+	"google.protobuf.Method":                                {},
+	"google.protobuf.Mixin":                                 {},
+	"google.protobuf.FileDescriptorSet":                     {},
+	"google.protobuf.FileDescriptorProto":                   {},
+	"google.protobuf.DescriptorProto":                       {},
+	"google.protobuf.DescriptorProto.ExtensionRange":        {},
+	"google.protobuf.DescriptorProto.ReservedRange":         {},
+	"google.protobuf.ExtensionRangeOptions":                 {},
+	"google.protobuf.FieldDescriptorProto":                  {},
+	"google.protobuf.FieldDescriptorProto.Type":             {},
+	"google.protobuf.FieldDescriptorProto.Label":            {},
+	"google.protobuf.OneofDescriptorProto":                  {},
+	"google.protobuf.EnumDescriptorProto":                   {},
+	"google.protobuf.EnumDescriptorProto.EnumReservedRange": {},
+	"google.protobuf.EnumValueDescriptorProto":              {},
+	"google.protobuf.ServiceDescriptorProto":                {},
+	"google.protobuf.MethodDescriptorProto":                 {},
+	"google.protobuf.FileOptions":                           {},
+	"google.protobuf.MessageOptions":                        {},
+	"google.protobuf.FieldOptions":                          {},
+	"google.protobuf.FieldOptions.CType":                    {},
+	"google.protobuf.FieldOptions.JSType":                   {},
+	"google.protobuf.OneofOptions":                          {},
+	"google.protobuf.EnumOptions":                           {},
+	"google.protobuf.EnumValueOptions":                      {},
+	"google.protobuf.ServiceOptions":                        {},
+	"google.protobuf.MethodOptions":                         {},
+	"google.protobuf.MethodOptions.IdempotencyLevel":        {},
+	"google.protobuf.UninterpretedOption":                   {},
+	"google.protobuf.UninterpretedOption.NamePart":          {},
+	"google.protobuf.SourceCodeInfo":                        {},
+	"google.protobuf.SourceCodeInfo.Location":               {},
+	"google.protobuf.GeneratedCodeInfo":                     {},
+	"google.protobuf.GeneratedCodeInfo.Annotation":          {},
+	"google.protobuf.Duration":                              {},
+	"google.protobuf.Empty":                                 {},
+	"google.protobuf.FieldMask":                             {},
+	"google.protobuf.SourceContext":                         {},
+	"google.protobuf.Struct":                                {},
+	"google.protobuf.Struct.FieldsEntry":                    {},
+	"google.protobuf.Value":                                 {},
+	"google.protobuf.ListValue":                             {},
+	"google.protobuf.Timestamp":                             {},
+	"google.protobuf.Syntax":                                {},
+	"google.protobuf.Type":                                  {},
+	"google.protobuf.Field":                                 {},
+	"google.protobuf.Field.Kind":                            {},
+	"google.protobuf.Field.Cardinality":                     {},
+	"google.protobuf.Enum":                                  {},
+	"google.protobuf.EnumValue":                             {},
+	"google.protobuf.Option":                                {},
+	"google.protobuf.DoubleValue":                           {},
+	"google.protobuf.FloatValue":                            {},
+	"google.protobuf.Int64Value":                            {},
+	"google.protobuf.UInt64Value":                           {},
+	"google.protobuf.Int32Value":                            {},
+	"google.protobuf.UInt32Value":                           {},
+	"google.protobuf.BoolValue":                             {},
+	"google.protobuf.StringValue":                           {},
+	"google.protobuf.BytesValue":                            {},
+}
+
+func Wellknown(name protoreflect.FullName) bool {
+	_, ok := wellknown[name]
+	return ok
+}
