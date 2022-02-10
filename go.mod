@@ -1,4 +1,4 @@
-module github.com/albenik-go/protogen-dump
+module github.com/albenik/protoc-gen-dump
 
 go 1.17
 

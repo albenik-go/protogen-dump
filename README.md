@@ -8,7 +8,7 @@ Quick crafted for personal use to see `protogen` data internals while building `
 ## Install
 
 ```shell
-go install github.com/albenik-go/protogen-dump/cmd/protoc-gen-protogen-dump@latest
+go install github.com/albenik/protoc-gen-dump/cmd/protoc-gen-dump@latest
 ```
 
 ## Usage

@@ -9,7 +9,7 @@ import (
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	"github.com/albenik-go/protogen-dump/wellknown"
+	"github.com/albenik/protoc-gen-dump/wellknown"
 )
 
 func main() {
